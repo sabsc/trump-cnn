@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Palanquin+Dark');
+
+html {
+	height: 100%;
+	width: 100%;
+	margin: 0 0 0 0;
+}
+
+body {
+	font-family: 'Lato';
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+h1, h2, h3 {
+	font-family: 'Palanquin Dark';
+}
+
+h1 {
+	font-size: 3.6em;
+	margin-top: 20px;
+}
+
+a {
+	color: #43adf9;
+}
+
+a:hover {
+	color: #43adf9;
+}
+
+a:visited, a:clicked {
+	color: #43adf9;
+}
+
+.brief-desc {
+	color: #555555;
+	font-size: .9em;
+}
+
+.dates {
+	font-size: .8em;
+	color: grey;
+}
+
+.dates a {
+    color: grey;
+    text-decoration: none;
+}
+
+.dates a:hover 
+{
+     color:grey; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+#author {
+	text-transform: uppercase;
+	color: #555555;
+}
+
+.public-tweet-display {
+	height: 28em;
+	width: 100%;
+	overflow-y: scroll;
+	position: relative;
+	border: 1px solid #d8d8d8;
+	/*border-radius: 10px;*/
+	/*padding: .5em;*/
+}
+
+.each-tweet {
+	background-color: #f9f9f9;
+	padding: .5em /*0 .5em 0*/ ;
+	border-bottom: 1px solid #d8d8d8;
+	font-size: .9em;
+	margin: 0;
+}
+
+.icon {
+	/*padding-left: .5em;*/
+}
+
+.tweet-text {
+	/*padding-left: .5em;*/
+	/*padding-right: .5em;*/
+}
+
+.highlight {
+	background-color: #f9f5cc;
+}
+
+
+#map {
+	height: 400px;
+    width: 100%;
+}
+
+
+.sentiment {
+	background-color: #f2c4c8;
+	font-weight: 600;
+	padding: .2em;
+}
+.sentiment2 {
+	background-color: #f7efca;
+	font-weight: 600;
+	padding: .2em;
+}
+.sentiment3 {
+	background-color: #d9f7ca;
+	font-weight: 600;
+	padding: .2em;
+}
+
+.polarized-subtext {
+	color: #444444;
+}
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  	body {
+  		font-size: 2.3em; /* overall scale */
+  		margin-left: 5%;
+		margin-right: 5%;
+  	}
+  	h1 {
+		font-size: 3.2em;
+	}
+	h2 {
+		font-size: 2.4em;
+	}
+	h3 {
+		font-size: 2em;
+	}
+
+
+}
+
+
+@media(device-width: 768px) and (device-height: 1024px){
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 7px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    }
+}
